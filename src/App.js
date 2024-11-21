@@ -26,7 +26,7 @@ function App() {
 
     // Make API call
     try {
-      const res = await axios.post("https://bajajfinsery-backend.onrender.com/bfhl", parsedData);
+      const res = await axios.post("https://bajajfinsery-backend-2.onrender.com/bfhl", parsedData);
       setResponse(res.data);
     } catch (err) {
       setError("Failed to fetch data from the server. Please ensure the backend is running.");
