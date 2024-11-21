@@ -26,7 +26,7 @@ function App() {
 
     // Make API call
     try {
-      const res = await axios.post("http://localhost:3001/bfhl", parsedData); // Changed HTTPS to HTTP
+      const res = await axios.post("https://bajajfinsery-backend-4.onrender.com/bfhl", parsedData); // Changed HTTPS to HTTP
       setResponse(res.data);
     } catch (err) {
       console.error("Error fetching data from the server:", err);
