@@ -26,9 +26,10 @@ function App() {
 
     // Make API call
     try {
-      const res = await axios.post("https://bajajfinsery-backend-2.onrender.com/bfhl", parsedData);
+      const res = await axios.post("http://localhost:3001/bfhl", parsedData); // Changed HTTPS to HTTP
       setResponse(res.data);
     } catch (err) {
+      console.error("Error fetching data from the server:", err);
       setError("Failed to fetch data from the server. Please ensure the backend is running.");
     }
   };
